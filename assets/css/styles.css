@@ -1,0 +1,762 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+#hero__background {
+  color: #ffffff;
+  background: url("../img/background.jpg");
+  background-size: cover;
+  height: 700px;
+}
+
+#hero__background h1 {
+  line-height: 1.3 !important;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.nav-colored {
+  background-color: #fff;
+}
+
+.nav-colored a {
+  color: #000 !important;
+}
+.nav-colored span {
+  color: #000 !important;
+}
+.nav-transparent {
+  background-color: none !important;
+  color: #fff;
+}
+nav .nav-link:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.3s ease;
+}
+
+nav {
+  margin-bottom: 20px !important;
+}
+
+.active {
+  color: black;
+}
+
+/* hero  */
+#hero {
+  position: relative;
+}
+
+/* services */
+
+#services {
+  background-color: rgb(236, 226, 226);
+}
+#services h1 {
+  line-height: 1.5 !important;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+#services .box {
+  background: #fff;
+  width: 350px;
+  height: 400px;
+}
+
+#services .box:hover {
+  background-color: pink;
+  transition: 0.4s ease-in;
+}
+#hero h4 {
+  top: 60px;
+  position: relative;
+  animation-name: float-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#hero h1 {
+  top: 40px;
+  position: relative;
+  animation-name: float-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1ms;
+}
+#hero button {
+  top: 30px;
+  position: relative;
+  animation-name: float-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1ms;
+}
+
+#contact {
+  background: linear-gradient(to bottom, #047aed, #947f);
+}
+#contact form {
+  width: 100%;
+  max-width: 600px;
+}
+#contact h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@keyframes float-up {
+  0% {
+    display: none;
+  }
+  50% {
+    display: flex;
+  }
+  100% {
+    transform: translateY(-35px);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  nav .navbar-nav {
+    font-size: small !important;
+    text-transform: lowercase !important;
+  }
+  nav button.btn {
+    padding: 5px 9px !important;
+    font-size: small;
+    text-transform: capitalize !important;
+  }
+  .navbar-brand {
+    font-size: smaller;
+  }
+
+  #hero {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    top: 20px;
+  }
+  #hero .col-md-6 {
+    width: 100%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .col-md-6 h4 {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 90%;
+  }
+
+  #hero .col-md-6 h1 {
+    font-size: 33px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #hero .col-md-6 button {
+    display: inline-flex;
+    margin: 5px 0;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #services h1 {
+    font-size: 35px;
+  }
+  #hero__background {
+    height: 500px;
+  }
+
+  #portfolio .card {
+    width: 300px !important;
+    height: auto;
+  }
+
+  #contact form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 400px;
+  }
+  #contact form Textarea {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services i {
+    font-size: large !important;
+  }
+
+  #hero .col-md-6 h1 {
+    font-size: 27px;
+    text-transform: none;
+  }
+
+  #hero .col-md-6 h4 {
+    font-size: 16px;
+    text-transform: none;
+  }
+
+  #hero .col-md-6 button {
+    margin-top: 5px;
+  }
+
+  #hero h4 {
+    top: 40px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  #hero h1 {
+    top: 40px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+  }
+  #hero button {
+    top: 40px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+  }
+
+  #services .box {
+    height: auto;
+  }
+  #services h1 {
+    font-size: 30px;
+  }
+  #services .box i {
+    font-size: 23x !important;
+  }
+  #services p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav .navbar-nav {
+    font-size: smaller !important;
+    text-transform: lowercase !important;
+  }
+  nav button.btn {
+    padding: 5px 9px !important;
+    font-size: small;
+    text-transform: capitalize !important;
+  }
+  .navbar-brand {
+    font-size: smaller;
+  }
+
+  #hero {
+    margin: 100px 0 0 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 400px !important;
+    width: 100%;
+  }
+  #hero .col-md-6 {
+    display: flex !important;
+    width: 100%;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .col-md-6 h1 {
+    font-size: 30px;
+  }
+
+  #services h1 {
+    font-size: 35px;
+  }
+
+  #services i {
+    font-size: 35px !important;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px !important;
+  }
+  footer p {
+    font-size: medium !important;
+    text-align: center !important;
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+  }
+
+  footer a {
+    position: absolute !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  nav .navbar-nav {
+    font-size: small !important;
+    text-transform: lowercase !important;
+  }
+  nav button.btn {
+    padding: 5px 9px !important;
+    font-size: small;
+    text-transform: capitalize !important;
+  }
+  .navbar-brand {
+    font-size: smaller;
+  }
+  #hero__background {
+    height: 550px;
+  }
+
+  #hero h4 {
+    margin-bottom: 19px !important;
+  }
+
+  #services .box {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 20px 0;
+  }
+  #services i {
+    font-size: 30px !important;
+  }
+
+  #services p {
+    font-size: small;
+  }
+  #hero button {
+    top: 40px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+  #hero__background {
+    height: 550px;
+  }
+
+  #services i {
+    font-size: 25px !important;
+  }
+
+  #services p {
+    font-size: small;
+  }
+
+  #services .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  #services {
+    padding-top: 50px;
+  }
+  #services h1 {
+    font-size: 28px;
+    padding-top: -10px;
+  }
+
+  #hero h4 {
+    top: 80px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  #hero h1 {
+    top: 60px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+  }
+  #hero button {
+    top: 40px;
+    position: relative;
+    animation-name: float-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px !important;
+  }
+  footer p {
+    font-size: small !important;
+    text-align: center !important;
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+  }
+
+  footer a {
+    position: absolute;
+  }
+}
+@keyframes float-up {
+  0% {
+    display: none;
+  }
+  50% {
+    display: flex;
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* transition */
+
+body {
+  animation: transitionIn ease-out 2s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/* portfolio and contact responsiveness */
+
+@media only screen and (max-width: 1400px) {
+  #portfolio .card {
+    width: 300px !important;
+    height: auto;
+  }
+
+  #contact form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 400px;
+  }
+  #contact form Textarea {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #contact form {
+    height: 450px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 400px;
+  }
+  #contact form Textarea {
+    width: 400px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 260px !important;
+    height: auto !important;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #contact form {
+    height: 450px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 400px;
+  }
+  #contact form Textarea {
+    width: 400px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 220px !important;
+    height: auto !important;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  #contact form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 300px;
+  }
+  #contact form Textarea {
+    width: 300px;
+  }
+
+  #contact label {
+    font-size: small;
+  }
+
+  #contact .form-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contact form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 300px;
+  }
+  #contact form Textarea {
+    width: 300px;
+  }
+
+  #contact label {
+    font-size: small;
+  }
+
+  #contact .form-text {
+    font-size: 12px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 500px !important;
+    height: 250px !important;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  #contact form {
+    width: 350px !important;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 300px;
+  }
+  #contact form Textarea {
+    width: 300px;
+  }
+  #contact label {
+    font-size: small;
+  }
+
+  #contact .form-text {
+    font-size: 12px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid !important;
+    gap: 10px;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 370px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #contact form {
+    width: 350px !important;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 300px;
+  }
+  #contact form Textarea {
+    width: 300px;
+  }
+  #contact label {
+    font-size: small;
+  }
+
+  #contact .form-text {
+    font-size: 12px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid !important;
+    gap: 10px;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 300px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #contact form {
+    width: 300px !important;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 250px;
+  }
+  #contact form Textarea {
+    width: 250px;
+  }
+  #contact label {
+    font-size: small;
+  }
+
+  #contact .form-text {
+    font-size: 12px;
+  }
+
+  #portfolio .container-fluid {
+    display: grid !important;
+    gap: 10px;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #portfolio .card {
+    width: 250px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  #portfolio .card .card-text {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
